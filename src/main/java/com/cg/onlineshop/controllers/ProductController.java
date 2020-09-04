@@ -14,6 +14,10 @@ public class ProductController {
 		return new ResponseEntity<String>("Hello To All From OnlineShop", HttpStatus.OK);
 	}
 
+	@RequestMapping(method=RequestMethod.GET, value={"/sayGoodBye"},produces={"text/html"})
+	public ResponseEntity<String> sayGoodBye(){
+		return new ResponseEntity<String>("GoodBye To All From OnlineShop", HttpStatus.OK);
+	}
 	@RequestMapping(method=RequestMethod.GET, value={"/sayHi"},produces={"application/text"})
 	public ResponseEntity<String> sayHi(){
 		return new ResponseEntity<String>("Hi to All From OnlineShop", HttpStatus.OK);
