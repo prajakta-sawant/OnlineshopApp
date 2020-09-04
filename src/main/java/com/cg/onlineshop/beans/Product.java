@@ -1,9 +1,12 @@
 package com.cg.onlineshop.beans;
 
+import java.util.Date;
+
 public class Product {
 	public int id;
 	public String name;
 	public int Price;
+	public Date packagingDate;
 	public Product(int id, String name) {
 		super();
 		this.id = id;
