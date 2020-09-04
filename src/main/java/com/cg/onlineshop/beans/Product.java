@@ -3,6 +3,7 @@ package com.cg.onlineshop.beans;
 public class Product {
 	public int id;
 	public String name;
+	public int Price;
 	public Product(int id, String name) {
 		super();
 		this.id = id;
